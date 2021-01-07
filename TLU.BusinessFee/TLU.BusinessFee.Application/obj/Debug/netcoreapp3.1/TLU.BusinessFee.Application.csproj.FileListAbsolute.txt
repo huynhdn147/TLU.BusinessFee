@@ -1,0 +1,9 @@
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.deps.json
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.pdb
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.csprojAssemblyReference.cache
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.AssemblyInfoInputs.cache
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.AssemblyInfo.cs
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.csproj.CoreCompileInputs.cache
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.pdb

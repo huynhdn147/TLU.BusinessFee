@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TLU.BusinessFee.Data/1.0.0": {
+        "runtime": {
+          "TLU.BusinessFee.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TLU.BusinessFee.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

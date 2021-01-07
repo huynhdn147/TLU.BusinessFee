@@ -46,7 +46,6 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.B
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.pdb
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.Views.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.Views.pdb
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.csprojAssemblyReference.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.AssemblyInfoInputs.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.AssemblyInfo.cs
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.csproj.CoreCompileInputs.cache
@@ -72,4 +71,3 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.B
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.pdb
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.genruntimeconfig.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.csproj.CopyComplete
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\Razor\Views\testview.cshtml.g.cs
