@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project_ki2_nhom2\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
+      "projectUniqueName": "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
       "projectName": "TLU.BusinessFee.Webapp",
-      "projectPath": "E:\\Project_ki2_nhom2\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
+      "projectPath": "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\Project_ki2_nhom2\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\obj\\",
+      "outputPath": "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
