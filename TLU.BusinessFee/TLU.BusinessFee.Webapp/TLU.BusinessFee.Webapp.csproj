@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TLU.BusinessFee.Application\TLU.BusinessFee.Application.csproj" />
+  </ItemGroup>
+
 </Project>
