@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLU.BusinessFee.Data", "TLU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLU.BusinessFee.Application", "TLU.BusinessFee.Application\TLU.BusinessFee.Application.csproj", "{E1825F65-8300-4457-9B5D-7D1E004F4968}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLU.BusinessFee.Utilities", "TLU.BusinessFee.Utilities\TLU.BusinessFee.Utilities.csproj", "{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLU.BusinessFee.BackendApi", "TLU.BusinessFee.BackendApi\TLU.BusinessFee.BackendApi.csproj", "{31781358-F24E-46B9-A395-44B0644E7D1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{E1825F65-8300-4457-9B5D-7D1E004F4968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1825F65-8300-4457-9B5D-7D1E004F4968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1825F65-8300-4457-9B5D-7D1E004F4968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31781358-F24E-46B9-A395-44B0644E7D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31781358-F24E-46B9-A395-44B0644E7D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31781358-F24E-46B9-A395-44B0644E7D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31781358-F24E-46B9-A395-44B0644E7D1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

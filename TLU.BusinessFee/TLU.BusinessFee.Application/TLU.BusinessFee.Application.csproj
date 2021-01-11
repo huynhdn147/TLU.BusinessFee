@@ -6,10 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TLU.BusinessFee.Data\TLU.BusinessFee.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Catalog\PhongBans\" />
+    <ProjectReference Include="..\TLU.BusinessFee.Utilities\TLU.BusinessFee.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

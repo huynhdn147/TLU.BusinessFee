@@ -1327,6 +1327,16 @@
         "runtime": {
           "bin/placeholder/TLU.BusinessFee.Data.dll": {}
         }
+      },
+      "TLU.BusinessFee.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TLU.BusinessFee.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TLU.BusinessFee.Utilities.dll": {}
+        }
       }
     }
   },
@@ -5075,11 +5085,17 @@
       "type": "project",
       "path": "../TLU.BusinessFee.Data/TLU.BusinessFee.Data.csproj",
       "msbuildProject": "../TLU.BusinessFee.Data/TLU.BusinessFee.Data.csproj"
+    },
+    "TLU.BusinessFee.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../TLU.BusinessFee.Utilities/TLU.BusinessFee.Utilities.csproj",
+      "msbuildProject": "../TLU.BusinessFee.Utilities/TLU.BusinessFee.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "TLU.BusinessFee.Data >= 1.0.0"
+      "TLU.BusinessFee.Data >= 1.0.0",
+      "TLU.BusinessFee.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5115,6 +5131,9 @@
           "projectReferences": {
             "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Data\\TLU.BusinessFee.Data.csproj": {
               "projectPath": "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Data\\TLU.BusinessFee.Data.csproj"
+            },
+            "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\TLU.BusinessFee.Utilities.csproj": {
+              "projectPath": "E:\\prjki2n2\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\TLU.BusinessFee.Utilities.csproj"
             }
           }
         }

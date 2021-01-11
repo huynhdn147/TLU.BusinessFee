@@ -111,3 +111,5 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.B
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.pdb
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.pdb
