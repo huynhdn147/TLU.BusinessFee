@@ -19,7 +19,7 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
         {
             _context = context;
         }
-        public async Task<int> Create(PhongBanCrearteRequest request)
+        public async Task<string> Create(PhongBanCrearteRequest request)
         {
             var PhongBan = new PhongBan()
             {
@@ -27,9 +27,20 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
                 
             };
             _context.PhongBans.Add(PhongBan);
-            return await _context.SaveChangesAsync();
+             await _context.SaveChangesAsync();
+            return PhongBan.MaPhongBan;
         }
+        public async Task<PhongBanViewModel> GetByID(string MaPhongBan)
+        {
+            var PhongBan = await _context.PhongBans.FindAsync(MaPhongBan);
+            var phongbanViewModel = new PhongBanViewModel()
+            {
 
+                MaPhongBan = PhongBan.MaPhongBan,
+                TenPhongBan = PhongBan.TenPhongBan
+            };
+            return phongbanViewModel;
+        }
         public async Task<int> Delete(string MaPhongBan)
         {
             var PhongBan = await _context.PhongBans.FindAsync(MaPhongBan);
@@ -64,6 +75,8 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
             };
             return pageResult;
              }
+
+        
 
         public async Task<int> Update(PhongBanUpdateRequest request)
         {
