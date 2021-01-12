@@ -33,7 +33,7 @@ namespace TLU.BusinessFee.BackendApi
             //declare DI
 
             services.AddTransient<IPublicPhongBanService, PublicPhongBanService>();
-
+            services.AddTransient<IManagerPhongBanService, ManagePhongBanService>();
             services.AddControllersWithViews();
             //swagger
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "swaggerdemo", Version = "v1" });
