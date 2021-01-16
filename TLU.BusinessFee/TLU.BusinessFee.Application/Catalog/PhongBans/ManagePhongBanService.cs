@@ -23,7 +23,7 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
         {
             var PhongBan = new PhongBan()
             {
-                MaPhongBan = request.MaPhongBan, TenPhongBan = request.TenPhongBan
+                MaPhongBan = request.MaPhongBan, TenPhongBan = request.TenPhongBan,NgayThanhLap=request.NgayThanhLap
                 
             };
             _context.PhongBans.Add(PhongBan);
@@ -37,7 +37,8 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
             {
 
                 MaPhongBan = PhongBan.MaPhongBan,
-                TenPhongBan = PhongBan.TenPhongBan
+                TenPhongBan = PhongBan.TenPhongBan,
+                NgayThanhLap= (DateTime)PhongBan.NgayThanhLap
             };
             return phongbanViewModel;
         }
@@ -63,7 +64,7 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
             int toTalRow = await query.CountAsync();
             var data = await query.Skip((request.pageIndex - 1) * request.pageSize).Take(request.pageSize).Select(x=>new PhongBanViewModel()
             { 
-            MaPhongBan=x.MaPhongBan,TenPhongBan=x.TenPhongBan
+            MaPhongBan=x.MaPhongBan,TenPhongBan=x.TenPhongBan,NgayThanhLap= (DateTime)x.NgayThanhLap
             }).ToListAsync();
 
             var pageResult = new PageResult<PhongBanViewModel>()
@@ -86,6 +87,7 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
 
             phongbandf.MaPhongBan = request.MaPhongBan;
             phongbandf.TenPhongBan = request.TenPhongBan;
+            phongbandf.NgayThanhLap = request.NgayThanhLap;
             return await _context.SaveChangesAsync();
         }
     }

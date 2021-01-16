@@ -8,7 +8,8 @@ namespace TLU.BusinessFee.Data.Entities
     {
         public string MaPhongBan { set; get; }
         public string TenPhongBan { set; get; }
-        
+        public DateTime? NgayThanhLap { set; get; }
+
         public List<NhanVienPhongBan> NhanVienPhongBans { set; get; }
     }
 }

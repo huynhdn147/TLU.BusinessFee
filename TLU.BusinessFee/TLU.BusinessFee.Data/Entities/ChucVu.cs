@@ -9,6 +9,7 @@ namespace TLU.BusinessFee.Data.Entities
         public string MaChucVu { set; get; }
         public string TenChucVu { set; get; }
         public List<NhanVienPhongBan> NhanVienPhongBans { set; get; }
+        public List<ChiPhiChucVu> chiPhiChucVus { set; get; }
  
     }
 }
