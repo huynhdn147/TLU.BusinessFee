@@ -16,7 +16,7 @@ namespace TLU.BusinessFee.Application.Catalog.ChucVus
     public class ManagerChucVuService : IManagerChucVuSerVice
     {
         private readonly TLUBusinessFeeDbContext _context;
-        public ManagerChucVuService(TLUBusinessFeeDbContext context)
+         public ManagerChucVuService(TLUBusinessFeeDbContext context)
         {
             _context = context;
         }

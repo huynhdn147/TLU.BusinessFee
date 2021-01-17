@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using TLU.BusinessFee.Application.Catalog.ChucVus;
+using TLU.BusinessFee.Application.Catalog.NhanViens;
 using TLU.BusinessFee.Application.Catalog.PhongBans;
 using TLU.BusinessFee.Data.EF;
 using TLU.BusinessFee.Utilities.Constants;
@@ -36,6 +37,7 @@ namespace TLU.BusinessFee.BackendApi
             services.AddTransient<IPublicPhongBanService, PublicPhongBanService>();
             services.AddTransient<IManagerPhongBanService, ManagePhongBanService>();
             services.AddTransient<IManagerChucVuSerVice, ManagerChucVuService>();
+            services.AddTransient<IManagerNhanVienService, ManagarNhanVienService>();
             services.AddControllersWithViews();
             //swagger
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "swaggerdemo", Version = "v1" });
