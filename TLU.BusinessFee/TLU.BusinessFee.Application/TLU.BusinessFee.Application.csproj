@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -7,6 +7,11 @@
   <ItemGroup>
     <ProjectReference Include="..\TLU.BusinessFee.Data\TLU.BusinessFee.Data.csproj" />
     <ProjectReference Include="..\TLU.BusinessFee.Utilities\TLU.BusinessFee.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Catalog\ChiPhis\" />
+    <Folder Include="Catalog\ChiPhiChucVus\" />
   </ItemGroup>
 
 </Project>

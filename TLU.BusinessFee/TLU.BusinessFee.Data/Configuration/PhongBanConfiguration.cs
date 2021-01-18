@@ -15,6 +15,7 @@ namespace TLU.BusinessFee.Data.Configuration
             builder.HasKey(x => x.MaPhongBan);
             builder.Property(x => x.MaPhongBan).HasMaxLength(5).IsUnicode(false);
             builder.Property(x => x.TenPhongBan).IsRequired(true).HasMaxLength(25).IsUnicode(false);
+            builder.Property(x => x.NgayThanhLap);
         }
     }
 }

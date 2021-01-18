@@ -1,0 +1,67 @@
+div#footer {
+    background-color: whitesmoke;
+    text-align-last: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-top: 18px;
+    background-color: whitesmoke;
+    font-size: 50px;
+}
+
+.btn.btn-primary {
+    height: 38px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+a.navbar-brand.js-scroll-trigger {
+    font-size: 25px;
+}
+
+a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger {
+    font-size: 25px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.col-2 {
+    font-size: 20px;
+}
+
+.col-3 {
+    font-size: 20px;
+}
+
+.col-9 {
+    font-size: 20px;
+}
+
+div#footer {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a.list-group-item.list-group-item-action.disabled.mt-3 {
+    background-color: khaki;
+}
+
+.btn.btn-primary.themmoi {
+    float: right;
+    width: 335px;
+    /* display: block; */
+    margin-left: 793px;
+}
