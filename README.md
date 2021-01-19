@@ -4,7 +4,7 @@
 -1- Clone project  
 -2- Restore nuget packet cho solution  
 -3- Set startup project cho TLU.BusinessFee.Data  
--4- vào công cụ tool>>Nuget packet Manager>>Package Manager Console
+-4- vào công cụ tool>>Nuget packet Manager>>Package Manager Console  
 -5- Set default project là TLU.BusinessFee.Data   
 -6- Chạy câu lệnh update-database
 -7- Sau khi thành công sẽ có được database trong sqlserver 
