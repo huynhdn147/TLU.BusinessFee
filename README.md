@@ -18,4 +18,4 @@
 ``"ConnectionStrings": {
     "TLU_BusinessFeeDb": "Data Source=Tên máy;Database=TLU_BusinessFeeDb;Integrated Security=False;User Id=sa;Password=mật khẩu;MultipleActiveResultSets=True;"
     }``  
--3- Thực hiện lại từ bước 5
+-3- Thực hiện lại từ bước 4
