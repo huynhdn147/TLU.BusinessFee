@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLU.BusinessFee.Data", "TLU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLU.BusinessFee.Application", "TLU.BusinessFee.Application\TLU.BusinessFee.Application.csproj", "{E1825F65-8300-4457-9B5D-7D1E004F4968}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLU.BusinessFee.Utilities", "TLU.BusinessFee.Utilities\TLU.BusinessFee.Utilities.csproj", "{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLU.BusinessFee.Utilities", "TLU.BusinessFee.Utilities\TLU.BusinessFee.Utilities.csproj", "{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TLU.BusinessFee.BackendApi", "TLU.BusinessFee.BackendApi\TLU.BusinessFee.BackendApi.csproj", "{31781358-F24E-46B9-A395-44B0644E7D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TLU.BusinessFee.BackendApi", "TLU.BusinessFee.BackendApi\TLU.BusinessFee.BackendApi.csproj", "{31781358-F24E-46B9-A395-44B0644E7D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 common", "1 common", "{876B521F-12F8-4037-B6B5-502541641FF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 domain", "2 domain", "{D3A8FDFB-3A32-4EDF-B275-61A5321C904F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. host", "3. host", "{1CB555E7-CD2F-4CB3-A2A1-C4D0CB9A9839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +48,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA06FF7E-EE5D-41DF-99E3-FA7CFCA9B53D} = {1CB555E7-CD2F-4CB3-A2A1-C4D0CB9A9839}
+		{4FA0303E-25C1-4942-B596-0D741837C4EA} = {D3A8FDFB-3A32-4EDF-B275-61A5321C904F}
+		{E1825F65-8300-4457-9B5D-7D1E004F4968} = {D3A8FDFB-3A32-4EDF-B275-61A5321C904F}
+		{D6C92B6D-5EE4-43FF-98C6-A0907BB190C7} = {876B521F-12F8-4037-B6B5-502541641FF0}
+		{31781358-F24E-46B9-A395-44B0644E7D1B} = {1CB555E7-CD2F-4CB3-A2A1-C4D0CB9A9839}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E87EAB56-6023-422C-B31B-2494EE572408}

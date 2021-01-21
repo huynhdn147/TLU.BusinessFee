@@ -62,6 +62,9 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\M
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\bin\Debug\netcoreapp3.1\ExcelDataReader.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\obj\Debug\netcoreapp3.1\TLU.BusinessFee.BackendApi.csproj.CoreCompileInputs.cache
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\obj\Debug\netcoreapp3.1\TLU.BusinessFee.BackendApi.MvcApplicationPartsAssemblyInfo.cs
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.BackendApi\obj\Debug\netcoreapp3.1\TLU.BusinessFee.BackendApi.MvcApplicationPartsAssemblyInfo.cache

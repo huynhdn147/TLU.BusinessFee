@@ -19,17 +19,29 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
         {
             _context = context;
         }
-        public async Task<int> Create(PhongBanCrearteRequest request)
+        public async Task<string> Create(PhongBanCrearteRequest request)
         {
             var PhongBan = new PhongBan()
             {
-                MaPhongBan = request.MaPhongBan, TenPhongBan = request.TenPhongBan
+                MaPhongBan = request.MaPhongBan, TenPhongBan = request.TenPhongBan,NgayThanhLap=request.NgayThanhLap
                 
             };
             _context.PhongBans.Add(PhongBan);
-            return await _context.SaveChangesAsync();
+             await _context.SaveChangesAsync();
+            return PhongBan.MaPhongBan;
         }
+        public async Task<PhongBanViewModel> GetByID(string MaPhongBan)
+        {
+            var PhongBan = await _context.PhongBans.FindAsync(MaPhongBan);
+            var phongbanViewModel = new PhongBanViewModel()
+            {
 
+                MaPhongBan = PhongBan.MaPhongBan,
+                TenPhongBan = PhongBan.TenPhongBan,
+                NgayThanhLap= (DateTime)PhongBan.NgayThanhLap
+            };
+            return phongbanViewModel;
+        }
         public async Task<int> Delete(string MaPhongBan)
         {
             var PhongBan = await _context.PhongBans.FindAsync(MaPhongBan);
@@ -52,7 +64,7 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
             int toTalRow = await query.CountAsync();
             var data = await query.Skip((request.pageIndex - 1) * request.pageSize).Take(request.pageSize).Select(x=>new PhongBanViewModel()
             { 
-            MaPhongBan=x.MaPhongBan,TenPhongBan=x.TenPhongBan
+            MaPhongBan=x.MaPhongBan,TenPhongBan=x.TenPhongBan,NgayThanhLap= (DateTime)x.NgayThanhLap
             }).ToListAsync();
 
             var pageResult = new PageResult<PhongBanViewModel>()
@@ -65,6 +77,8 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
             return pageResult;
              }
 
+        
+
         public async Task<int> Update(PhongBanUpdateRequest request)
         {
             var phongban = await _context.PhongBans.FindAsync(request.MaPhongBan);
@@ -73,6 +87,7 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
 
             phongbandf.MaPhongBan = request.MaPhongBan;
             phongbandf.TenPhongBan = request.TenPhongBan;
+            phongbandf.NgayThanhLap = request.NgayThanhLap;
             return await _context.SaveChangesAsync();
         }
     }

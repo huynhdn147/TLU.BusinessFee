@@ -115,7 +115,15 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Text.Encoding.CodePages": {
               "target": "Package",
               "version": "[5.0.0, )"
             }

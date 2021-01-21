@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- begin Header -->
+    <div class="container-fluid" style="background-color: whitesmoke;">
+
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg text-uppercase " id="mainNav">
+                    <div class="container-fluid">
+                        <a class="navbar-brand js-scroll-trigger" href="#page-top">Trang chủ</a>
+                        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">info</a></li>
+                                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li> -->
+                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end Header -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+    <div class="row">
+        <!-- begin col nav -->
+        <div class="col-2">
+            <div class="list-group ">
+                <a href="#" class="list-group-item list-group-item-action disabled mt-3">QLGV</a>
+                <a href="#" class="list-group-item list-group-item-action">Quản lý phòng ban</a>
+                <a href="#" class="list-group-item list-group-item-action">Quản lý giáo viên</a>
+            </div>
+        </div>
+        <!-- end col nav -->
+
+        <!-- begin content -->
+
+        <div class="col-9">
+            <h1>Chức năng Quản lý phòng ban</h1>
+            <div class="btn-group">
+                <div class="form-group">
+                    <input type="text" name="" id="" class="form-control" placeholder="Nhập tên">
+                </div>
+                <div class="btn btn-primary ml-1">
+                    Tìm kiếm
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã phòng ban</th>
+                                <th>Tên phòng ban</th>
+                                <!-- <th>Quyền</th> -->
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ABC</td>
+                                <td>hoang</td>
+                                <!-- <td>admin</td> -->
+                                <td>
+                                    <div class="btn btn-warning btn-group">
+                                        <div class="fa fa-edit">Sửa</div>
+                                    </div>
+                                    <div class="btn btn-danger btn-group">
+                                        <div class="fa fa-edit">Xóa</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>abc</td>
+                                <td>hoang</td>
+                                <!-- <td>admin</td> -->
+                                <td>
+                                    <div class="btn btn-warning btn-group">
+                                        <div class="fa fa-edit">Sửa</div>
+                                    </div>
+                                    <div class="btn btn-danger btn-group">
+                                        <div class="fa fa-edit">Xóa</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>abc</td>
+                                <td>hoang</td>
+                                <!-- <td>admin</td> -->
+                                <td>
+                                    <div class="btn btn-warning btn-group">
+                                        <div class="fa fa-edit">Sửa</div>
+                                    </div>
+                                    <div class="btn btn-danger btn-group">
+                                        <div class="fa fa-edit">Xóa</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- copy tr vào đây -->
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="col-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <p class="disabled">Thêm mới</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+
+                                <div class="form-group">
+                                    <p style="text-align: left;">Mã phòng ban</p>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Mã phòng ban">
+                                    <p style="text-align: left;">Tên phòng ban</p>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Tên phòng ban">
+                                    <!-- <p style="text-align: left;">Quyền</p>
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Chọn quyền</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div> -->
+                                    <input type="submit" class="btn btn-primary btn-block mt-2" value="Thêm mới">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content -->
+        </div>
+    </div>
+
+
+
+
+    <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- begin footer -->
+    <div id="footer">
+        Địa chỉ: Đường Nghiêm Xuân Yêm - Đại Kim - Hoàng Mai - Hà Nội<br /> Điện thoại hỗ trợ kỹ thuật:(024) 355 92 678 website <a href="http://www.thanglong.edu.vn">http://www.thanglong.edu.vn</a> mail:<a href="mailto:p.cntt@thanglong.edu.vn">p.cntt@thanglong.edu.vn</a>
+    </div>
+    <!-- end footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
