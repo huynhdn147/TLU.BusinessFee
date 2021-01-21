@@ -10,8 +10,8 @@ using TLU.BusinessFee.Data.EF;
 namespace TLU.BusinessFee.Data.Migrations
 {
     [DbContext(typeof(TLUBusinessFeeDbContext))]
-    [Migration("20210121083156_changeTable")]
-    partial class changeTable
+    [Migration("20210121095133_changeTable1")]
+    partial class changeTable1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -43,7 +43,8 @@ namespace TLU.BusinessFee.Data.Migrations
                         .IsUnicode(false);
 
                     b.Property<string>("MoTa")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<string>("TenCapBac")
                         .IsRequired()
@@ -75,20 +76,22 @@ namespace TLU.BusinessFee.Data.Migrations
 
             modelBuilder.Entity("TLU.BusinessFee.Data.Entities.ChiPhiChucVu", b =>
                 {
+                    b.Property<string>("MaChiPhi")
+                        .HasColumnType("varchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(false);
+
                     b.Property<string>("MaCapBac")
                         .HasColumnType("varchar(5)")
                         .HasMaxLength(5)
                         .IsUnicode(false);
 
-                    b.Property<string>("MaChiPhi")
-                        .HasColumnType("varchar(5)");
-
                     b.Property<int>("SoTienDinhMuc")
                         .HasColumnType("int");
 
-                    b.HasKey("MaCapBac", "MaChiPhi");
+                    b.HasKey("MaChiPhi", "MaCapBac");
 
-                    b.HasIndex("MaChiPhi");
+                    b.HasIndex("MaCapBac");
 
                     b.ToTable("DinhMuc");
                 });
@@ -134,7 +137,7 @@ namespace TLU.BusinessFee.Data.Migrations
                     b.Property<DateTime?>("NgayThanhLap")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2021, 1, 21, 15, 31, 55, 529, DateTimeKind.Local).AddTicks(8189));
+                        .HasDefaultValue(new DateTime(2021, 1, 21, 16, 51, 32, 942, DateTimeKind.Local).AddTicks(2632));
 
                     b.Property<string>("TenPhongBan")
                         .IsRequired()
@@ -149,13 +152,13 @@ namespace TLU.BusinessFee.Data.Migrations
 
             modelBuilder.Entity("TLU.BusinessFee.Data.Entities.ChiPhiChucVu", b =>
                 {
-                    b.HasOne("TLU.BusinessFee.Data.Entities.ChiPhi", "chiPhi")
+                    b.HasOne("TLU.BusinessFee.Data.Entities.CapBac", "CapBac")
                         .WithMany("chiPhiChucVus")
                         .HasForeignKey("MaCapBac")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("TLU.BusinessFee.Data.Entities.CapBac", "CapBac")
+                    b.HasOne("TLU.BusinessFee.Data.Entities.ChiPhi", "chiPhi")
                         .WithMany("chiPhiChucVus")
                         .HasForeignKey("MaChiPhi")
                         .OnDelete(DeleteBehavior.Cascade)

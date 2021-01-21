@@ -12,12 +12,12 @@ namespace TLU.BusinessFee.Data.Configuration
         public void Configure(EntityTypeBuilder<ChiPhiChucVu> builder)
         {
             builder.ToTable("DinhMuc");
-            builder.HasKey(x => new { x.MaCapBac, x.MaChiPhi });
-            builder.Property(x => x.MaCapBac).IsRequired(true).HasMaxLength(5).IsUnicode(false);
+            builder.HasKey(x => new { x.MaChiPhi,x.MaCapBac  });
+            builder.Property(x => x.MaChiPhi).IsRequired(true).HasMaxLength(5).IsUnicode(false);
             builder.Property(x => x.MaCapBac).IsRequired(true).HasMaxLength(5).IsUnicode(false);
             builder.Property(x => x.SoTienDinhMuc).IsRequired(true);
-            builder.HasOne(x => x.chiPhi).WithMany(pc => pc.chiPhiChucVus).HasForeignKey(pc => pc.MaCapBac);
-            builder.HasOne(x => x.CapBac).WithMany(pc => pc.chiPhiChucVus).HasForeignKey(pc => pc.MaChiPhi);
+            builder.HasOne(x => x.chiPhi).WithMany(pc => pc.chiPhiChucVus).HasForeignKey(pc => pc.MaChiPhi);
+            builder.HasOne(x => x.CapBac).WithMany(pc => pc.chiPhiChucVus).HasForeignKey(pc => pc.MaCapBac);
         }
     }
 }

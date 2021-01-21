@@ -17,7 +17,28 @@ namespace TLU.BusinessFee.BackendApi.Controllers
         {
             _managerChiPhiChucVuService = managerChiPhiChucVuService;
         }
-        
+        [HttpGet]
+        public async Task<IActionResult> getAll()
+        {
+            var dinhmuc = await _managerChiPhiChucVuService.GetAll();
+            return Ok(dinhmuc);
+        }
+        [HttpGet("getbyChiPhiid/{MaChiPhi}")]
+        public async Task<IActionResult> getbyChiPhiID(string MaChiPhi)
+        {
+            var chiphi = await _managerChiPhiChucVuService.GetByChiPhiID(MaChiPhi);
+            if (chiphi == null)
+                return BadRequest("khong the tim thay loai chi phi nay");
+            return Ok(chiphi);
+        }
+        [HttpGet("getbyCapBacid/{MaCapBac}")]
+        public async Task<IActionResult> getbyCapBacID(string MaCapBac)
+        {
+            var CapBac = await _managerChiPhiChucVuService.GetByChucVuID(MaCapBac);
+            if (CapBac == null)
+                return BadRequest("khong the tim thay loai chi phi nay");
+            return Ok(CapBac);
+        }
         [HttpDelete("{maChiPhi}&{maCapBac}")]
         public async Task<IActionResult> Delete(string maChiPhi,string maCapBac)
         {

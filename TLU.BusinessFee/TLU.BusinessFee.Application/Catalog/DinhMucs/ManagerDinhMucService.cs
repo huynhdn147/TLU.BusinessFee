@@ -22,8 +22,8 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
         {
             var ChiPhiChucVus = new ChiPhiChucVu()
             {
-                MaCapBac = request.MaChiPhi,
-                MaChiPhi = request.MaChucVu,
+                MaCapBac = request.MaCapBac,
+                MaChiPhi = request.MaChiPhi,
                 SoTienDinhMuc = request.SoTienDinhMuc
             };
             _context.ChiPhiChucVus.Add(ChiPhiChucVus);
@@ -31,9 +31,9 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
             return ChiPhiChucVus.MaCapBac + ChiPhiChucVus.MaChiPhi;
         }
 
-        public async Task<int> Delete(string MaChiPhi, string MaChucVu)
+        public async Task<int> Delete(string MaCapBac, string MaChiPhi)
         {
-            var chiPhiChucVu = await _context.ChiPhiChucVus.FindAsync(MaChiPhi, MaChucVu);
+            var chiPhiChucVu = await _context.ChiPhiChucVus.FindAsync(MaCapBac, MaChiPhi);
            // var chucvu = await _context.ChiPhiChucVus.FindAsync(MaChucVu);
             if (chiPhiChucVu == null ) throw new TLUException("Khong co loai nay");
             _context.ChiPhiChucVus.RemoveRange(chiPhiChucVu);
@@ -44,44 +44,43 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
             var query = from p in _context.ChiPhiChucVus select p;
             var data = await query.Select(x => new DinhMucViewModel()
             {
-                MaChiPhi=x.MaCapBac,
-                MaChucVu = x.MaChiPhi,
+                MaChiPhi=x.MaChiPhi,
+                MaCapBac = x.MaCapBac,
                 SoTienDinhMuc=x.SoTienDinhMuc
             }).ToListAsync();
             return data;
         }
 
-        public async Task<DinhMucViewModel> GetByChiPhiID(string MaChiPhi)
+        public async Task<List<DinhMucViewModel>> GetByChiPhiID(string MaChiPhi)
         {
-            var ChiPhichucvu = await _context.ChiPhiChucVus.FindAsync(MaChiPhi);
-            var ChiPhichucvuChucVuViewModel = new DinhMucViewModel()
+            var query = from p in _context.ChiPhiChucVus where p.MaChiPhi == MaChiPhi select p;
+            var data = await query.Select(x => new DinhMucViewModel()
             {
-                MaChiPhi= ChiPhichucvu.MaCapBac,
-                MaChucVu = ChiPhichucvu.MaChiPhi,
-                SoTienDinhMuc=ChiPhichucvu.SoTienDinhMuc
-            };
-            return ChiPhichucvuChucVuViewModel;
+                MaChiPhi = x.MaChiPhi,
+                MaCapBac = x.MaCapBac,
+                SoTienDinhMuc = x.SoTienDinhMuc
+            }).ToListAsync();
+            return data;
         }
 
-        public async Task<DinhMucViewModel> GetByChucVuID(string MaChucVu)
+        public async Task<List<DinhMucViewModel>> GetByChucVuID(string MaCapBac)
         {
-            var chucvu = await _context.ChiPhiChucVus.FindAsync(MaChucVu);
-            var ChucVuViewModel = new DinhMucViewModel()
+            var query = from p in _context.ChiPhiChucVus where p.MaCapBac == MaCapBac select p;
+            var data = await query.Select(x => new DinhMucViewModel()
             {
-
-                MaChucVu = chucvu.MaChiPhi,
-                MaChiPhi=chucvu.MaCapBac,
-                SoTienDinhMuc=chucvu.SoTienDinhMuc
-            };
-            return ChucVuViewModel;
+                MaChiPhi = x.MaChiPhi,
+                MaCapBac = x.MaCapBac,
+                SoTienDinhMuc = x.SoTienDinhMuc
+            }).ToListAsync();
+            return data;
         }
 
         public async Task<int> Update(UpdateDinhMucRequest request)
         {
-            var chucvu = await _context.ChiPhiChucVus.FindAsync(request.MaChucVu,request.MaChiPhi);
-            var chucvudf = await _context.ChiPhiChucVus.FirstOrDefaultAsync(x =>  x.MaChiPhi == request.MaChucVu && x.MaCapBac == request.MaChiPhi );
+            var chucvu = await _context.ChiPhiChucVus.FindAsync(request.MaCapBac,request.MaChiPhi);
+            var chucvudf = await _context.ChiPhiChucVus.FirstOrDefaultAsync(x =>  x.MaChiPhi == request.MaCapBac && x.MaCapBac == request.MaChiPhi );
             if (chucvu == null) throw new TLUException("Khong co chuc vu");
-            chucvudf.MaChiPhi = request.MaChucVu;
+            chucvudf.MaChiPhi = request.MaCapBac;
             chucvudf.MaCapBac = request.MaChiPhi;
             chucvudf.SoTienDinhMuc = request.SoTienDinhMuc;
 

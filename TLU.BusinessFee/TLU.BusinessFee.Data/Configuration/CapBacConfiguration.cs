@@ -15,7 +15,7 @@ namespace TLU.BusinessFee.Data.Configuration
             builder.HasKey(x => x.MaCapBac);
             builder.Property(x => x.TenCapBac).IsRequired().HasMaxLength(25);
             builder.Property(x => x.MaCapBac).HasMaxLength(5).IsUnicode(false);
-            
+            builder.Property(x => x.MoTa).HasMaxLength(250);
         }
     }
 }

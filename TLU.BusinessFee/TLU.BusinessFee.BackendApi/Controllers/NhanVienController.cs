@@ -35,7 +35,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
         }
 
 
-        [HttpGet("{MaNhanVien}")]
+        [HttpGet("getbyNVid/{MaNhanVien}")]
         public async Task<IActionResult> getbyID(string MaNhanVien)
         {
             var nhanvien = await _managarNhanVienService.GetByID(MaNhanVien);

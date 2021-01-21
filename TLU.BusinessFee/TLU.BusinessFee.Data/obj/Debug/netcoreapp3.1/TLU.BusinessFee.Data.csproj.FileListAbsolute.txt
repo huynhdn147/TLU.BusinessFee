@@ -9,3 +9,4 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.Bus
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.dev.json
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.genruntimeconfig.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csproj.CoreCompileInputs.cache
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csprojAssemblyReference.cache
