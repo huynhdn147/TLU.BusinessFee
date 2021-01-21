@@ -60,7 +60,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             return Ok(nhanvien);
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] CreateNhanVienRequest request)
+        public async Task<IActionResult> Create([FromBody] CreateNhanVienRequest request)
         {
             var result = await _managarNhanVienService.Create(request);
             if (result == null)
@@ -70,7 +70,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromForm] UpdateNhanVienRequest request)
+        public async Task<IActionResult> Update([FromBody] UpdateNhanVienRequest request)
         {
             var affecedResult = await _managarNhanVienService.Update(request);
             if (affecedResult == 0)

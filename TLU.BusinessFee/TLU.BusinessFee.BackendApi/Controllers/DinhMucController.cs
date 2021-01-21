@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TLU.BusinessFee.Application.Catalog.ChiPhiChucVus;
+using TLU.BusinessFee.Application.Catalog.ChiPhiChucVus.DTOS;
 
 namespace TLU.BusinessFee.BackendApi.Controllers
 {
@@ -39,10 +40,29 @@ namespace TLU.BusinessFee.BackendApi.Controllers
                 return BadRequest("khong the tim thay loai chi phi nay");
             return Ok(CapBac);
         }
-        [HttpDelete("{maChiPhi}&{maCapBac}")]
-        public async Task<IActionResult> Delete(string maChiPhi,string maCapBac)
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] UpdateDinhMucRequest request)
         {
-            var affecedResult = await _managerChiPhiChucVuService.Delete(maChiPhi, maCapBac);
+            var affecedResult = await _managerChiPhiChucVuService.Update(request);
+            if (affecedResult == 0)
+                return BadRequest();
+
+            return Ok();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreatedDinhMucRequest request)
+        {
+            var result = await _managerChiPhiChucVuService.Create(request);
+            if (result == null)
+                return BadRequest();
+            var chiphi = await _managerChiPhiChucVuService.GetByChiPhiID(result);
+            var capBac = await _managerChiPhiChucVuService.GetByChucVuID(result);
+            return Ok("DinhMucMoi");
+        }
+        [HttpDelete("{maCapBac}&{maChiPhi}")]
+        public async Task<IActionResult> Delete(string maCapBac,string maChiPhi)
+        {
+            var affecedResult = await _managerChiPhiChucVuService.Delete(maCapBac, maChiPhi);
             if (affecedResult == 0)
                 return BadRequest();
 

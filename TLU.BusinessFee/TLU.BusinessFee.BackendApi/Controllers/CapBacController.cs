@@ -35,7 +35,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             return Ok(chucvu);
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] CreatedCapBacRequest request)
+        public async Task<IActionResult> Create([FromBody] CreatedCapBacRequest request)
         {
             var result = await _ManagerCapBacSerVice.Create(request);
             if (result == null)
@@ -44,7 +44,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             return Created(nameof(getbyID), chucvu);
         }
         [HttpPut]
-        public async Task<IActionResult> Update([FromForm] UpdateCapBacRequest request)
+        public async Task<IActionResult> Update([FromBody] UpdateCapBacRequest request)
         {
             var affecedResult = await _ManagerCapBacSerVice.Update(request);
             if (affecedResult == 0)

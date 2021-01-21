@@ -31,14 +31,7 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
             return ChiPhiChucVus.MaCapBac + ChiPhiChucVus.MaChiPhi;
         }
 
-        public async Task<int> Delete(string MaCapBac, string MaChiPhi)
-        {
-            var chiPhiChucVu = await _context.ChiPhiChucVus.FindAsync(MaCapBac, MaChiPhi);
-           // var chucvu = await _context.ChiPhiChucVus.FindAsync(MaChucVu);
-            if (chiPhiChucVu == null ) throw new TLUException("Khong co loai nay");
-            _context.ChiPhiChucVus.RemoveRange(chiPhiChucVu);
-            return await _context.SaveChangesAsync();
-        }
+        
         public async Task<List<DinhMucViewModel>> GetAll()
         {
             var query = from p in _context.ChiPhiChucVus select p;
@@ -77,13 +70,20 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
 
         public async Task<int> Update(UpdateDinhMucRequest request)
         {
-            var chucvu = await _context.ChiPhiChucVus.FindAsync(request.MaCapBac,request.MaChiPhi);
-            var chucvudf = await _context.ChiPhiChucVus.FirstOrDefaultAsync(x =>  x.MaChiPhi == request.MaCapBac && x.MaCapBac == request.MaChiPhi );
-            if (chucvu == null) throw new TLUException("Khong co chuc vu");
-            chucvudf.MaChiPhi = request.MaCapBac;
-            chucvudf.MaCapBac = request.MaChiPhi;
+            var chiPhiChucVu = await _context.ChiPhiChucVus.FindAsync(request.MaChiPhi, request.MaCapBac);
+            var chucvudf = await _context.ChiPhiChucVus.FirstOrDefaultAsync(x =>  x.MaCapBac == request.MaCapBac && x.MaChiPhi == request.MaChiPhi );
+            if (chiPhiChucVu == null) throw new TLUException("Khong co chuc vu");
+           
             chucvudf.SoTienDinhMuc = request.SoTienDinhMuc;
 
+            return await _context.SaveChangesAsync();
+        }
+        public async Task<int> Delete(string MaCapBac , string MaChiPhi )
+        {
+            var chiPhiChucVu = await _context.ChiPhiChucVus.FindAsync(MaChiPhi, MaCapBac);
+            // var chucvu = await _context.ChiPhiChucVus.FindAsync(MaChucVu);
+            if (chiPhiChucVu == null) throw new TLUException("Khong co loai nay");
+            _context.ChiPhiChucVus.RemoveRange(chiPhiChucVu);
             return await _context.SaveChangesAsync();
         }
     }

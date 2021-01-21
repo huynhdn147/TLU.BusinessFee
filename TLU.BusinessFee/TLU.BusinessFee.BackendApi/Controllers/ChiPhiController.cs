@@ -39,10 +39,11 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             if (result == null)
                 return BadRequest();
             var chiPhi = await _managerChiPhiService.GetByID(result);
-            return Created(nameof(getbyID), chiPhi);
+            
+            return Created(nameof(chiPhi),chiPhi);
         }
         [HttpPut]
-        public async Task<IActionResult> Update([FromForm] UpdateChiPhiRequest request)
+        public async Task<IActionResult> Update([FromBody] UpdateChiPhiRequest request)
         {
             var affecedResult = await _managerChiPhiService.Update(request);
             if (affecedResult == 0)
