@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TLU.BusinessFee.Application\TLU.BusinessFee.Application.csproj" />
+    <ProjectReference Include="..\TLU.BusinessFee.Data\TLU.BusinessFee.Data.csproj" />
+    <ProjectReference Include="..\TLU.BusinessFee.Utilities\TLU.BusinessFee.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
