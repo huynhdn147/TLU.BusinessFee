@@ -21,7 +21,8 @@ namespace TLU.BusinessFee.Data.EF
             modelBuilder.ApplyConfiguration(new ChucVuConfiguration());
             modelBuilder.ApplyConfiguration(new PhongBanConfiguration());
             modelBuilder.ApplyConfiguration(new NhanVienPhongBanConfiguration());
-
+            modelBuilder.ApplyConfiguration(new ChiPhiConfiguration());
+            modelBuilder.ApplyConfiguration(new ChiPhiChucVuConfiguration());
             // data seeding
             modelBuilder.seed();
 
@@ -31,5 +32,7 @@ namespace TLU.BusinessFee.Data.EF
         public DbSet<NhanVienPhongBan> NhanVienPhongs { set; get; }
         public DbSet<ChucVu> ChucVus { set; get; }
         public DbSet<AppConfig> AppConfigs { set; get; }
+        public DbSet<ChiPhi> ChiPhis { set; get; }
+        public DbSet<ChiPhiChucVu> ChiPhiChucVus { set; get; }
     }
 }

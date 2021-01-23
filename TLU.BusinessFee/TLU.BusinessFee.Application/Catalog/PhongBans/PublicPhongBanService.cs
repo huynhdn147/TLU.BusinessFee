@@ -26,7 +26,8 @@ namespace TLU.BusinessFee.Application.Catalog.PhongBans
             var data = await query.Select(x => new PhongBanViewModel()
             {
                 MaPhongBan = x.MaPhongBan,
-                TenPhongBan = x.TenPhongBan
+                TenPhongBan = x.TenPhongBan,
+                NgayThanhLap= (DateTime)x.NgayThanhLap
             }).ToListAsync();
             return data;
         }
