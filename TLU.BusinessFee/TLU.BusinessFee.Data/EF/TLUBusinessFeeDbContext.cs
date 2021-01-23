@@ -1,7 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using TLU.BusinessFee.Data.Configuration;
 using TLU.BusinessFee.Data.Entities;
 using TLU.BusinessFee.Data.Extensions;
@@ -23,6 +20,10 @@ namespace TLU.BusinessFee.Data.EF
             modelBuilder.ApplyConfiguration(new NhanVienPhongBanConfiguration());
             modelBuilder.ApplyConfiguration(new ChiPhiConfiguration());
             modelBuilder.ApplyConfiguration(new ChiPhiChucVuConfiguration());
+            modelBuilder.ApplyConfiguration(new TaiKhoanConfiguration());
+            modelBuilder.ApplyConfiguration(new NhomQuyenConfiguration());
+            modelBuilder.ApplyConfiguration(new QuyenTaiKhoanConfiguration());
+            modelBuilder.ApplyConfiguration(new UserClaimConfiguration());
             // data seeding
             modelBuilder.seed();
 
@@ -34,6 +35,10 @@ namespace TLU.BusinessFee.Data.EF
         public DbSet<AppConfig> AppConfigs { set; get; }
         public DbSet<ChiPhi> ChiPhis { set; get; }
         public DbSet<ChiPhiChucVu> ChiPhiChucVus { set; get; }
-        
+        public DbSet<TaiKhoan> taiKhoans { set; get; }
+        public DbSet<UserClaim> UserClaims { set; get; }
+        public DbSet<QuyenTaiKhoan> QuyenTaiKhoans { set; get; }
+        public DbSet<NhomQuyen> NhomQuyens { set; get; }
+
     }
 }

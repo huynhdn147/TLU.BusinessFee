@@ -10,8 +10,8 @@ using TLU.BusinessFee.Data.EF;
 namespace TLU.BusinessFee.Data.Migrations
 {
     [DbContext(typeof(TLUBusinessFeeDbContext))]
-    [Migration("20210121095133_changeTable1")]
-    partial class changeTable1
+    [Migration("20210123052149_updateDb")]
+    partial class updateDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -127,6 +127,28 @@ namespace TLU.BusinessFee.Data.Migrations
                     b.ToTable("NhanViens");
                 });
 
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.NhomQuyen", b =>
+                {
+                    b.Property<string>("RoleID")
+                        .HasColumnType("nvarchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(true);
+
+                    b.Property<string>("MoTa")
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250)
+                        .IsUnicode(true);
+
+                    b.HasKey("RoleID");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("TLU.BusinessFee.Data.Entities.PhongBan", b =>
                 {
                     b.Property<string>("MaPhongBan")
@@ -137,7 +159,7 @@ namespace TLU.BusinessFee.Data.Migrations
                     b.Property<DateTime?>("NgayThanhLap")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasDefaultValue(new DateTime(2021, 1, 21, 16, 51, 32, 942, DateTimeKind.Local).AddTicks(2632));
+                        .HasDefaultValue(new DateTime(2021, 1, 23, 12, 21, 49, 430, DateTimeKind.Local).AddTicks(8605));
 
                     b.Property<string>("TenPhongBan")
                         .IsRequired()
@@ -148,6 +170,69 @@ namespace TLU.BusinessFee.Data.Migrations
                     b.HasKey("MaPhongBan");
 
                     b.ToTable("PhongBans");
+                });
+
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.QuyenTaiKhoan", b =>
+                {
+                    b.Property<string>("RoleID")
+                        .HasColumnType("nvarchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(true);
+
+                    b.Property<string>("MaNhanVien")
+                        .HasColumnType("varchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(false);
+
+                    b.HasKey("RoleID", "MaNhanVien");
+
+                    b.HasIndex("MaNhanVien");
+
+                    b.ToTable("UserRole");
+                });
+
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.TaiKhoan", b =>
+                {
+                    b.Property<string>("MaNhanVien")
+                        .HasColumnType("varchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(false);
+
+                    b.Property<string>("PassWord")
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.HasKey("MaNhanVien");
+
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.UserClaim", b =>
+                {
+                    b.Property<string>("ClaimID")
+                        .HasColumnType("varchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(false);
+
+                    b.Property<string>("ClaimType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.Property<string>("MaNhanVien")
+                        .HasColumnType("varchar(5)")
+                        .HasMaxLength(5)
+                        .IsUnicode(false);
+
+                    b.HasKey("ClaimID");
+
+                    b.HasIndex("MaNhanVien");
+
+                    b.ToTable("UserClaims");
                 });
 
             modelBuilder.Entity("TLU.BusinessFee.Data.Entities.ChiPhiChucVu", b =>
@@ -174,6 +259,37 @@ namespace TLU.BusinessFee.Data.Migrations
                     b.HasOne("TLU.BusinessFee.Data.Entities.PhongBan", "PhongBan")
                         .WithMany("NhanVienPhongBans")
                         .HasForeignKey("MaPhongBan");
+                });
+
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.QuyenTaiKhoan", b =>
+                {
+                    b.HasOne("TLU.BusinessFee.Data.Entities.TaiKhoan", "taiKhoan")
+                        .WithMany("QuyenTaiKhoan")
+                        .HasForeignKey("MaNhanVien")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TLU.BusinessFee.Data.Entities.NhomQuyen", "nhomQuyen")
+                        .WithMany("quyenTaiKhoans")
+                        .HasForeignKey("RoleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.TaiKhoan", b =>
+                {
+                    b.HasOne("TLU.BusinessFee.Data.Entities.NhanVienPhongBan", "NhanVienPhongBan")
+                        .WithOne("TaiKhoan")
+                        .HasForeignKey("TLU.BusinessFee.Data.Entities.TaiKhoan", "MaNhanVien")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("TLU.BusinessFee.Data.Entities.UserClaim", b =>
+                {
+                    b.HasOne("TLU.BusinessFee.Data.Entities.TaiKhoan", "taiKhoans")
+                        .WithMany("userClaims")
+                        .HasForeignKey("MaNhanVien");
                 });
 #pragma warning restore 612, 618
         }

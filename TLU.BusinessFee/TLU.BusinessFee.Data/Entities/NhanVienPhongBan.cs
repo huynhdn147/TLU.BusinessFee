@@ -14,5 +14,6 @@ namespace TLU.BusinessFee.Data.Entities
         public string MaPhongBan { set; get; }
         public PhongBan PhongBan { set; get; }
         public CapBac CapBac { set; get; }
+        public  TaiKhoan TaiKhoan { set; get; }
     }
 }

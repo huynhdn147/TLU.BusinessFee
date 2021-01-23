@@ -49,13 +49,17 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
 
         public async Task<List<NhanVienViewModel>> GetAll()
         {
-            var query = from p in _context.NhanVienPhongs select p;
+            var query = from p in _context.NhanVienPhongs
+                        join cp in _context.PhongBans on p.MaPhongBan equals cp.MaPhongBan
+                        join cpp in _context.CapBacs on p.MaCapBac equals cpp.MaCapBac
+                        select new { p, cp, cpp };
+                        
             var data = await query.Select(x => new NhanVienViewModel()
             {
-               MaNhanVien=x.MaNhanVien,
-               TenNhanVien=x.TenNhanVien,
-               MaChucVu=x.MaCapBac,
-               MaPhongBan= x.MaPhongBan
+                MaNhanVien=x.p.MaNhanVien,
+                TenNhanVien=x.p.TenNhanVien,
+               TenCapBac=x.cpp.TenCapBac
+               ,TenPhongBan=x.cp.TenPhongBan
             }).ToListAsync();
             return data;
         }
@@ -77,8 +81,8 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             {
                 MaNhanVien = x.MaNhanVien,
                 TenNhanVien = x.TenNhanVien,
-                MaChucVu = x.MaCapBac,
-                MaPhongBan = x.MaPhongBan
+                //MaChucVu = x.MaCapBac,
+                //MaPhongBan = x.MaPhongBan
             }).ToListAsync();
             return data;
         }
@@ -95,8 +99,8 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             {
                 MaNhanVien = x.MaNhanVien,
                 TenNhanVien = x.TenNhanVien,
-                MaChucVu = x.MaCapBac,
-                MaPhongBan = x.MaPhongBan
+                //MaChucVu = x.MaCapBac,
+                //MaPhongBan = x.MaPhongBan
             }).ToListAsync();
             return data;
         }
@@ -121,8 +125,8 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             {
                 MaNhanVien = query.MaNhanVien,
                 TenNhanVien = query.TenNhanVien,
-                MaChucVu = query.MaCapBac,
-                MaPhongBan = query.MaPhongBan
+                //MaChucVu = query.MaCapBac,
+                //MaPhongBan = query.MaPhongBan
             };
             return nhanvien;
         }

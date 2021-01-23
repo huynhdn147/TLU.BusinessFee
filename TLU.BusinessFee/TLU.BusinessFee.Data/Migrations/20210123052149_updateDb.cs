@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TLU.BusinessFee.Data.Migrations
 {
-    public partial class changeTable1 : Migration
+    public partial class updateDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,11 +50,24 @@ namespace TLU.BusinessFee.Data.Migrations
                 {
                     MaPhongBan = table.Column<string>(unicode: false, maxLength: 5, nullable: false),
                     TenPhongBan = table.Column<string>(unicode: false, maxLength: 25, nullable: false),
-                    NgayThanhLap = table.Column<DateTime>(nullable: true, defaultValue: new DateTime(2021, 1, 21, 16, 51, 32, 942, DateTimeKind.Local).AddTicks(2632))
+                    NgayThanhLap = table.Column<DateTime>(nullable: true, defaultValue: new DateTime(2021, 1, 23, 12, 21, 49, 430, DateTimeKind.Local).AddTicks(8605))
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PhongBans", x => x.MaPhongBan);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    RoleID = table.Column<string>(maxLength: 5, nullable: false),
+                    RoleName = table.Column<string>(maxLength: 250, nullable: false),
+                    MoTa = table.Column<string>(maxLength: 250, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.RoleID);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,6 +121,68 @@ namespace TLU.BusinessFee.Data.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "User",
+                columns: table => new
+                {
+                    MaNhanVien = table.Column<string>(unicode: false, maxLength: 5, nullable: false),
+                    PassWord = table.Column<string>(maxLength: 250, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_User", x => x.MaNhanVien);
+                    table.ForeignKey(
+                        name: "FK_User_NhanViens_MaNhanVien",
+                        column: x => x.MaNhanVien,
+                        principalTable: "NhanViens",
+                        principalColumn: "MaNhanVien",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserClaims",
+                columns: table => new
+                {
+                    ClaimID = table.Column<string>(unicode: false, maxLength: 5, nullable: false),
+                    MaNhanVien = table.Column<string>(unicode: false, maxLength: 5, nullable: true),
+                    ClaimType = table.Column<string>(maxLength: 250, nullable: false),
+                    ClaimValue = table.Column<string>(maxLength: 250, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserClaims", x => x.ClaimID);
+                    table.ForeignKey(
+                        name: "FK_UserClaims_User_MaNhanVien",
+                        column: x => x.MaNhanVien,
+                        principalTable: "User",
+                        principalColumn: "MaNhanVien",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserRole",
+                columns: table => new
+                {
+                    MaNhanVien = table.Column<string>(unicode: false, maxLength: 5, nullable: false),
+                    RoleID = table.Column<string>(maxLength: 5, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserRole", x => new { x.RoleID, x.MaNhanVien });
+                    table.ForeignKey(
+                        name: "FK_UserRole_User_MaNhanVien",
+                        column: x => x.MaNhanVien,
+                        principalTable: "User",
+                        principalColumn: "MaNhanVien",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserRole_Roles_RoleID",
+                        column: x => x.RoleID,
+                        principalTable: "Roles",
+                        principalColumn: "RoleID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_DinhMuc_MaCapBac",
                 table: "DinhMuc",
@@ -122,6 +197,16 @@ namespace TLU.BusinessFee.Data.Migrations
                 name: "IX_NhanViens_MaPhongBan",
                 table: "NhanViens",
                 column: "MaPhongBan");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserClaims_MaNhanVien",
+                table: "UserClaims",
+                column: "MaNhanVien");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserRole_MaNhanVien",
+                table: "UserRole",
+                column: "MaNhanVien");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -133,10 +218,22 @@ namespace TLU.BusinessFee.Data.Migrations
                 name: "DinhMuc");
 
             migrationBuilder.DropTable(
-                name: "NhanViens");
+                name: "UserClaims");
+
+            migrationBuilder.DropTable(
+                name: "UserRole");
 
             migrationBuilder.DropTable(
                 name: "ChiPhi");
+
+            migrationBuilder.DropTable(
+                name: "User");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
+
+            migrationBuilder.DropTable(
+                name: "NhanViens");
 
             migrationBuilder.DropTable(
                 name: "CapBac");

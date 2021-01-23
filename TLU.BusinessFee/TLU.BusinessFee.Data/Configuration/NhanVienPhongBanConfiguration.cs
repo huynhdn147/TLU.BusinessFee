@@ -22,6 +22,7 @@ namespace TLU.BusinessFee.Data.Configuration
                 .HasForeignKey(pc=>pc.MaPhongBan);
             builder.HasOne(x => x.CapBac).WithMany(pc => pc.NhanVienPhongBans)
                 .HasForeignKey(pc => pc.MaCapBac);
+            builder.HasOne(x => x.TaiKhoan).WithOne(pc => pc.NhanVienPhongBan).HasForeignKey<TaiKhoan>(pc => pc.MaNhanVien);
         }
     }
 }

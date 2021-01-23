@@ -72,8 +72,6 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.B
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.genruntimeconfig.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.csproj.CopyComplete
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Webapp.csprojAssemblyReference.cache
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -83,7 +81,6 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Micro
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
@@ -113,3 +110,14 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.B
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.pdb
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Owin.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.Cookies.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.OAuth.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Webapp\bin\Debug\netcoreapp3.1\Owin.dll
