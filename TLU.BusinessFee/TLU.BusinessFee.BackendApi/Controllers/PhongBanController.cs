@@ -37,7 +37,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             return Ok(phongban);
         }
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] PhongBanCrearteRequest request)
+        public async Task<IActionResult> Create([FromBody] PhongBanCrearteRequest request)
         {
             var result = await _managerPhongBanService.Create(request);
             if (result == null)
@@ -45,8 +45,8 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             var PhongBan = await _managerPhongBanService.GetByID(result);
             return Created(nameof(getbyID), PhongBan);
         }
-        [HttpPut]
-        public async Task<IActionResult> Update([FromForm] PhongBanUpdateRequest request)
+        [HttpPut("{MaPhongBan}")]
+        public async Task<IActionResult> Update([FromBody] PhongBanUpdateRequest request)
         {
             var affecedResult = await _managerPhongBanService.Update(request);
             if (affecedResult == 0)

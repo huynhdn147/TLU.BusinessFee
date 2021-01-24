@@ -1,7 +1,6 @@
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.deps.json
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
-E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csprojAssemblyReference.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.AssemblyInfoInputs.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.AssemblyInfo.cs
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
@@ -9,4 +8,17 @@ E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.Bus
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.json
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.dev.json
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.genruntimeconfig.cache
+E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csprojAssemblyReference.cache
 E:\prjki2n2\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csproj.CoreCompileInputs.cache
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.deps.json
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.json
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.dev.json
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csprojAssemblyReference.cache
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.AssemblyInfoInputs.cache
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.AssemblyInfo.cs
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csproj.CoreCompileInputs.cache
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
+E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.genruntimeconfig.cache

@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using TLU.BusinessFee.Application.Catalog.ChiPhiChucVus;
+using TLU.BusinessFee.Application.Catalog.ChiPhis;
 using TLU.BusinessFee.Application.Catalog.ChucVus;
 using TLU.BusinessFee.Application.Catalog.NhanViens;
 using TLU.BusinessFee.Application.Catalog.PhongBans;
@@ -36,8 +38,10 @@ namespace TLU.BusinessFee.BackendApi
 
             services.AddTransient<IPublicPhongBanService, PublicPhongBanService>();
             services.AddTransient<IManagerPhongBanService, ManagePhongBanService>();
-            services.AddTransient<IManagerChucVuSerVice, ManagerChucVuService>();
+            services.AddTransient<IManagerCapBacSerVice, ManagerCapBacService>();
             services.AddTransient<IManagerNhanVienService, ManagarNhanVienService>();
+            services.AddTransient<IManagerChiPhiService, ManagerChiPhiService>();
+            services.AddTransient<IManagerDinhMucService, ManagerDinhMucService>();
             services.AddControllersWithViews();
             //swagger
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "swaggerdemo", Version = "v1" });
@@ -76,6 +80,7 @@ namespace TLU.BusinessFee.BackendApi
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            
         }
     }
 }

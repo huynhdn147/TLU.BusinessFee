@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TLU.BusinessFee.Application.Catalog.NhanViens.DTOS;
 using TLU.BusinessFee.Application.DTO;
+using TLU.BusinessFee.Data.Entities;
 
 namespace TLU.BusinessFee.Application.Catalog.NhanViens
 {
@@ -17,5 +18,7 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
         Task<List<NhanVienViewModel>> GetAllByChucVuID(string MaChucVu);
         Task<List<NhanVienViewModel>> GetAll();
         Task<PageResult<NhanVienViewModel>> GetAllPaging(GetNhanVienPagingRequest request);
+        Task Create(List<NhanVienPhongBan> nhanvien);
+        //Task<string> CreatedByExcel();
     }
 }

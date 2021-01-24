@@ -25,7 +25,7 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             {
                 MaNhanVien = request.MaNhanVien,
                 TenNhanVien = request.TenNhanVien,
-                MaChucVu = request.MaChucVu,
+                MaCapBac = request.MaChucVu,
                 MaPhongBan = request.MaPhongBan
 
 
@@ -33,6 +33,10 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             _context.NhanVienPhongs.Add(nhanvien);
             await _context.SaveChangesAsync();
             return nhanvien.MaNhanVien;
+        }
+        public Task Create(List<NhanVienPhongBan> nhanvien)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<int> Delete(string MaNhanVien)
@@ -45,13 +49,17 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
 
         public async Task<List<NhanVienViewModel>> GetAll()
         {
-            var query = from p in _context.NhanVienPhongs select p;
+            var query = from p in _context.NhanVienPhongs
+                        join cp in _context.PhongBans on p.MaPhongBan equals cp.MaPhongBan 
+                        join cpp in _context.CapBacs on p.MaCapBac equals cpp.MaCapBac
+                        select new { p, cp, cpp };
+                        
             var data = await query.Select(x => new NhanVienViewModel()
             {
-               MaNhanVien=x.MaNhanVien,
-               TenNhanVien=x.TenNhanVien,
-               MaChucVu=x.MaChucVu,
-               MaPhongBan= x.MaPhongBan
+                MaNhanVien=x.p.MaNhanVien,
+                TenNhanVien=x.p.TenNhanVien,
+               TenCapBac=x.cpp.TenCapBac
+               ,TenPhongBan=x.cp.TenPhongBan
             }).ToListAsync();
             return data;
         }
@@ -64,17 +72,17 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
         public async Task<List<NhanVienViewModel>> GetAllByChucVuID(string MaChucVu)
         {
             
-            var query = from p in _context.NhanVienPhongs join pb in _context.ChucVus 
-                        on p.MaChucVu equals pb.MaChucVu
-                        where p.MaChucVu == MaChucVu
+            var query = from p in _context.NhanVienPhongs join pb in _context.CapBacs 
+                        on p.MaCapBac equals pb.MaCapBac
+                        where p.MaCapBac == MaChucVu
                         select p
                         ;
             var data = await query.Select(x => new NhanVienViewModel()
             {
                 MaNhanVien = x.MaNhanVien,
                 TenNhanVien = x.TenNhanVien,
-                MaChucVu = x.MaChucVu,
-                MaPhongBan = x.MaPhongBan
+                //MaChucVu = x.MaCapBac,
+                //MaPhongBan = x.MaPhongBan
             }).ToListAsync();
             return data;
         }
@@ -91,8 +99,8 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             {
                 MaNhanVien = x.MaNhanVien,
                 TenNhanVien = x.TenNhanVien,
-                MaChucVu = x.MaChucVu,
-                MaPhongBan = x.MaPhongBan
+                //MaChucVu = x.MaCapBac,
+                //MaPhongBan = x.MaPhongBan
             }).ToListAsync();
             return data;
         }
@@ -106,7 +114,7 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             nhanviendf.MaNhanVien = request.MaNhanVien;
             nhanviendf.TenNhanVien = request.TenNhanVien;
             nhanviendf.MaPhongBan = request.MaPhongBan;
-            nhanviendf.MaChucVu = request.MaChucVu;
+            nhanviendf.MaCapBac = request.MaChucVu;
             return await _context.SaveChangesAsync();
         }
 
@@ -117,10 +125,12 @@ namespace TLU.BusinessFee.Application.Catalog.NhanViens
             {
                 MaNhanVien = query.MaNhanVien,
                 TenNhanVien = query.TenNhanVien,
-                MaChucVu = query.MaChucVu,
-                MaPhongBan = query.MaPhongBan
+                //MaChucVu = query.MaCapBac,
+                //MaPhongBan = query.MaPhongBan
             };
             return nhanvien;
         }
+
+        
     }
 }
