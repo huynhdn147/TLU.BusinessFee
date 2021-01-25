@@ -28,7 +28,7 @@ namespace TLU.BusinessFee.BackendApi.Controllers
             }
             else
             {
-                return Ok(resultt);
+                return Ok(new { resultt.MaNhanVien, resultt.UserRole });
             }
 
            
