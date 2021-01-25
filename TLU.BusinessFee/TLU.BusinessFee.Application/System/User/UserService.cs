@@ -18,7 +18,7 @@ namespace TLU.BusinessFee.Application.System.User
         {
             _context = context;
         }
-        public async Task<string> Authencatee(LoginRequest request)
+        public async Task<UserViewModel> Authencatee(LoginRequest request)
         {
             var query = from accout in _context.taiKhoans
                         join userrole in _context.QuyenTaiKhoans
@@ -33,12 +33,14 @@ namespace TLU.BusinessFee.Application.System.User
             var result = new UserViewModel();
             foreach(var item in data)
             {
-                if (item.MaNhanVien == request.MaNhanVien && item.PassWord==request.PassWord)
-                     result.UserRole = item.UserRole;
-                result.MaNhanVien = item.MaNhanVien;
-                result.PassWord = item.PassWord;
+                if (item.MaNhanVien == request.MaNhanVien && item.PassWord == request.PassWord)
+                {
+                    result.UserRole = item.UserRole;
+                    result.MaNhanVien = item.MaNhanVien;
+                    result.PassWord = item.PassWord;
+                }
             }
-            return result.UserRole;
+            return result;
         }
 
         public Task<int> Register(RegisterRequest request)

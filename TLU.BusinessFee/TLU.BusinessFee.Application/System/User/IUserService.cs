@@ -7,7 +7,7 @@ namespace TLU.BusinessFee.Application.System.User
 {
     public interface IUserService
     {
-        Task<string> Authencatee(LoginRequest request);
+        Task<UserViewModel> Authencatee(LoginRequest request);
         Task<int> Register(RegisterRequest request);
     }
 }
