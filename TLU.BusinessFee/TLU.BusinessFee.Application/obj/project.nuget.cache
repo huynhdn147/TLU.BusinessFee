@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NQ1GVmcoj7XgFhceU+SBccM9ctoU8Hyn6hmU9Ji7cnlh6qhxaEaH+2zmSJoN6WSVGM273bHO2KwZ+rByP3gh6w==",
+  "dgSpecHash": "pPUHq5PDB08kLjHMu3c1twMw0wy8T0SPkfMBEuU1VBZCwTF8jnyw6DXbx1K4rQsHb3GfG9UUBci++ns+WgVkQQ==",
   "success": true,
-  "projectFilePath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Application\\TLU.BusinessFee.Application.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Application\\TLU.BusinessFee.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnet.identity.owin\\2.2.3\\microsoft.aspnet.identity.owin.2.2.3.nupkg.sha512",

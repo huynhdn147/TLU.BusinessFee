@@ -22,3 +22,15 @@ E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.deps.json
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.json
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Data\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Data.genruntimeconfig.cache

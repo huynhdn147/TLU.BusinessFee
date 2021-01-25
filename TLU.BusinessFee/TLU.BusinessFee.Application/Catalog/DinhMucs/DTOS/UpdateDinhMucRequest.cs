@@ -9,5 +9,6 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus.DTOS
         public string MaCapBac { set; get; }
         public string MaChiPhi { set; get; }
         public int SoTienDinhMuc { set; get; }
+        public string DonVi { set; get; }
     }
 }

@@ -16,6 +16,7 @@ namespace TLU.BusinessFee.Data.Configuration
             builder.Property(x => x.MaChiPhi).IsRequired(true).HasMaxLength(5).IsUnicode(false);
             builder.Property(x => x.MaCapBac).IsRequired(true).HasMaxLength(5).IsUnicode(false);
             builder.Property(x => x.SoTienDinhMuc).IsRequired(true);
+            builder.Property(x => x.DonVi).IsRequired(true);
             builder.HasOne(x => x.chiPhi).WithMany(pc => pc.chiPhiChucVus).HasForeignKey(pc => pc.MaChiPhi);
             builder.HasOne(x => x.CapBac).WithMany(pc => pc.chiPhiChucVus).HasForeignKey(pc => pc.MaCapBac);
         }

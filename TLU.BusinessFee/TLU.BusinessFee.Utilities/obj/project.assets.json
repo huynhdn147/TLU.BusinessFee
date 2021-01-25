@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\TLU.BusinessFee.Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\TLU.BusinessFee.Utilities.csproj",
       "projectName": "TLU.BusinessFee.Utilities",
-      "projectPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\TLU.BusinessFee.Utilities.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\TLU.BusinessFee.Utilities.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

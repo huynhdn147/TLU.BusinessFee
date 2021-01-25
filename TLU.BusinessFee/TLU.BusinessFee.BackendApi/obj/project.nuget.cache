@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sBMjZB3JVDp3+4zJ2jJXoSfToBRQULMVCjGW768+Iikq/ZYkuOcF799AJoREBphudIXPUpk7znAPbKNW2sb+WA==",
+  "dgSpecHash": "vIHf36Z6J67PjQzhPN6n7qlzezgG2R0nJjZHY3GECsn5nT/w5emNrnw7rVxREpbMBESkbYEJInUR5bUJJ5DuFA==",
   "success": true,
-  "projectFilePath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.BackendApi\\TLU.BusinessFee.BackendApi.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.BackendApi\\TLU.BusinessFee.BackendApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

@@ -5144,11 +5144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Data\\TLU.BusinessFee.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Data\\TLU.BusinessFee.Data.csproj",
       "projectName": "TLU.BusinessFee.Data",
-      "projectPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Data\\TLU.BusinessFee.Data.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Data\\TLU.BusinessFee.Data.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Data\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

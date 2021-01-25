@@ -6157,11 +6157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
       "projectName": "TLU.BusinessFee.Webapp",
-      "projectPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\TLU.BusinessFee.Webapp.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Webapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -6181,8 +6181,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Application\\TLU.BusinessFee.Application.csproj": {
-              "projectPath": "E:\\prjki2n2\\TLU.BusinessFee-addLoginDb\\TLU.BusinessFee\\TLU.BusinessFee.Application\\TLU.BusinessFee.Application.csproj"
+            "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Application\\TLU.BusinessFee.Application.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\TLU.BusinessFee\\TLU.BusinessFee\\TLU.BusinessFee.Application\\TLU.BusinessFee.Application.csproj"
             }
           }
         }

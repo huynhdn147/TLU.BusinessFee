@@ -25,6 +25,7 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
                 MaCapBac = request.MaCapBac,
                 MaChiPhi = request.MaChiPhi,
                 SoTienDinhMuc = request.SoTienDinhMuc
+                , DonVi = request.DonVi
             };
             _context.ChiPhiChucVus.Add(ChiPhiChucVus);
             await _context.SaveChangesAsync();
@@ -40,6 +41,7 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
                 MaChiPhi=x.MaChiPhi,
                 MaCapBac = x.MaCapBac,
                 SoTienDinhMuc=x.SoTienDinhMuc
+                ,DonVi=x.DonVi
             }).ToListAsync();
             return data;
         }
@@ -51,7 +53,8 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
             {
                 MaChiPhi = x.MaChiPhi,
                 MaCapBac = x.MaCapBac,
-                SoTienDinhMuc = x.SoTienDinhMuc
+                SoTienDinhMuc = x.SoTienDinhMuc,
+                DonVi = x.DonVi
             }).ToListAsync();
             return data;
         }
@@ -63,7 +66,8 @@ namespace TLU.BusinessFee.Application.Catalog.ChiPhiChucVus
             {
                 MaChiPhi = x.MaChiPhi,
                 MaCapBac = x.MaCapBac,
-                SoTienDinhMuc = x.SoTienDinhMuc
+                SoTienDinhMuc = x.SoTienDinhMuc,
+                DonVi = x.DonVi
             }).ToListAsync();
             return data;
         }

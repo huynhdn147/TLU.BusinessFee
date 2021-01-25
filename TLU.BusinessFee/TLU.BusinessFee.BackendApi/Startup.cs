@@ -15,6 +15,7 @@ using TLU.BusinessFee.Application.Catalog.ChiPhis;
 using TLU.BusinessFee.Application.Catalog.ChucVus;
 using TLU.BusinessFee.Application.Catalog.NhanViens;
 using TLU.BusinessFee.Application.Catalog.PhongBans;
+using TLU.BusinessFee.Application.System.User;
 using TLU.BusinessFee.Data.EF;
 using TLU.BusinessFee.Utilities.Constants;
 
@@ -42,6 +43,7 @@ namespace TLU.BusinessFee.BackendApi
             services.AddTransient<IManagerNhanVienService, ManagarNhanVienService>();
             services.AddTransient<IManagerChiPhiService, ManagerChiPhiService>();
             services.AddTransient<IManagerDinhMucService, ManagerDinhMucService>();
+            services.AddTransient<IUserService, UserService>();
             services.AddControllersWithViews();
             //swagger
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "swaggerdemo", Version = "v1" });

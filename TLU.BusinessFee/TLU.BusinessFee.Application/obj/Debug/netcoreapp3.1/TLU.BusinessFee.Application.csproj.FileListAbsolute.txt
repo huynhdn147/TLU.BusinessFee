@@ -26,3 +26,17 @@ E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Applicati
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.csproj.CopyComplete
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.dll
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.deps.json
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Application.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Data.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Application\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Application.csproj.CopyComplete

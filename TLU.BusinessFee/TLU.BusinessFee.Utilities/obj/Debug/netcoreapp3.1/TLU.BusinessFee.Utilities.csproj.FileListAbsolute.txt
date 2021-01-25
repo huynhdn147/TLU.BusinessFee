@@ -16,3 +16,12 @@ E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Utilities
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.csproj.CoreCompileInputs.cache
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.dll
 E:\prjki2n2\TLU.BusinessFee-addLoginDb\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.deps.json
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\bin\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.pdb
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.dll
+C:\Users\Administrator\Desktop\TLU.BusinessFee\TLU.BusinessFee\TLU.BusinessFee.Utilities\obj\Debug\netcoreapp3.1\TLU.BusinessFee.Utilities.pdb
